@@ -25,7 +25,7 @@ function agregarCurso(e) {
     e.preventDefault();
 
     if(e.target.classList.contains('agregar-carrito')) {
-        const cursoSeleccion = e.target.parentElement.parentElement;
+        const cursoSeleccion = e.target.parentElement.parentElement; //= div class='card'
         obtenerDatos(cursoSeleccion);
     }
 }
@@ -112,10 +112,3 @@ function limpiarHTML(element) {
         element.removeChild(element.firstChild);
     }
 }
-
-/*
--Forma no recomendado de limpieza-
-function limpiarHTML(element) {
-    element.innerHTML = "";
-}
-*/
